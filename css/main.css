@@ -1,1 +1,76 @@
+.burger {
+  position: absolute;
+  z-index: 10;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  transform: rotateY(0deg);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+  .burger__patty {
+    width: 28px;
+    height: 2px;
+    margin: 0 0 4px 0;
+    background: black;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .burger__patty:last-child {
+      margin-bottom: 0; }
+  .burger--close {
+    transform: rotate(180deg); }
+    .burger--close .burger__patty:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px); }
+    .burger--close .burger__patty:nth-child(2) {
+      opacity: 0; }
+    .burger--close .burger__patty:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -4px); }
 
+.menu {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  margin: 0 auto;
+  padding: 38px 0; }
+  .menu nav {
+    background: #E04462;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    overflow-y: scroll;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); }
+    .menu nav ul {
+      font-family: 'RobotoLight', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: #334854;
+      text-align: center;
+      margin: 0;
+      padding: 0; }
+      .menu nav ul li {
+        list-style: none;
+        margin: 30px 0 0 0; }
+        .menu nav ul li:first-child {
+          margin: 0; }
+        .menu nav ul li .link {
+          color: #334854;
+          text-decoration: none;
+          transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); }
+          .menu nav ul li .link:hover {
+            border-bottom: solid 1.5px #334854;
+            padding: 0 0 2px; }
+
+.menu.open nav {
+  opacity: 1; }
+
+body {
+  font-family: "RobotoLight";
+  font-size: 22px;
+  font-weight: 300;
+  background: #fff; }
+
+/*# sourceMappingURL=main.css.map */
