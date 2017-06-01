@@ -16,6 +16,17 @@
     $('.burger').removeClass('burger--close');
   });
 
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 20) {
+      $('.menu').addClass('menu_scroll');
+
+    } else {
+      $('.menu').removeClass('menu_scroll');
+    }
+  });
+
   $(".menu").on("click","a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();

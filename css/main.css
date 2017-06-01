@@ -28,7 +28,10 @@
   height: auto;
   position: fixed;
   margin: 0 auto;
-  padding: 38px 0; }
+  padding: 38px 0;
+  transition: all .4s; }
+  .menu_scroll {
+    background: rgba(0, 0, 0, 0.45); }
   .menu nav {
     background: #E04462;
     width: 100vw;
