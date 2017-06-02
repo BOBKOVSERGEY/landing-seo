@@ -32,9 +32,9 @@
   transition: all .4s;
   z-index: 9; }
   .menu_scroll {
-    background: rgba(0, 0, 0, 0.45); }
+    background: rgba(130, 143, 154, 0.45); }
   .menu nav {
-    background: rgba(224, 68, 98, 0.9);
+    background: rgba(241, 89, 42, 0.9);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -52,7 +52,7 @@
       font-family: 'RobotoLight', sans-serif;
       font-size: 2.4rem;
       font-weight: 300;
-      color: #334854;
+      color: #fff;
       text-align: center;
       margin: 0;
       padding: 0; }
@@ -63,12 +63,12 @@
           margin: 0; }
         .menu nav ul li .link {
           font-family: RobotoBold;
-          color: #334854;
+          color: #fff;
           text-decoration: none;
           text-transform: uppercase;
           transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); }
           .menu nav ul li .link:hover {
-            border-bottom: solid 1.5px #334854;
+            border-bottom: solid 1.5px #fff;
             padding: 0 0 2px; }
 
 .menu.open nav {
@@ -109,12 +109,14 @@
       -o-transform: scale(1.2);
       transform: scale(1.2); }
   .slider__intro {
-    margin-top: 200px; }
+    margin-top: 150px;
+    color: #fff; }
 
 body {
   font-family: RobotoLight;
   font-size: 22px;
   font-weight: 300;
+  color: #2c2d30;
   background: #fff; }
 
 /*# sourceMappingURL=main.css.map */

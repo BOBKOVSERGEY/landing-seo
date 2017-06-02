@@ -47,7 +47,7 @@
   z-index: 9;
 
   &_scroll {
-    background: rgba(0,0,0,.45);
+    background: $menyScroll;
   }
   nav {
     background: $red;
