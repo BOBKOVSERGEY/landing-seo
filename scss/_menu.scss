@@ -11,7 +11,7 @@
     width: 28px;
     height: 2px;
     margin: 0 0 4px 0;
-    background: black;
+    background: white;
     @include easeOut;
 
     &:last-child {
@@ -44,6 +44,7 @@
   margin: 0 auto;
   padding: 38px 0;
   transition: all .4s;
+  z-index: 9;
 
   &_scroll {
     background: rgba(0,0,0,.45);
@@ -60,6 +61,7 @@
     top: 0;
     z-index: 2;
     opacity: 0;
+    visibility: hidden;
     overflow-y: scroll;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 
@@ -81,8 +83,10 @@
         }
 
         .link {
+          font-family: $robotoBold;
           color: $gray;
           text-decoration: none;
+          text-transform: uppercase;
           transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 
           &:hover {
@@ -98,6 +102,7 @@
 // Menu - opened
 .menu.open {
   nav {
+    visibility: visible;
     opacity: 1;
   }
 }

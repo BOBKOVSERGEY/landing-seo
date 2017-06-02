@@ -42,6 +42,12 @@
 
   });
 
+  setTimeout(function () {
+    $('.slider__cover_scaling').css({
+      "transform" : "scale(1)"
+    });
+  }, 10);
+
 
 
 
