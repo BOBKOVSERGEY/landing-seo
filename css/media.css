@@ -13,6 +13,15 @@
 
 }
 
+@media only screen and (max-width : 500px) {
+  .menu__btn {
+    display: none;
+  }
+  .menu__phone {
+    padding: 7px 0;
+  }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
