@@ -66,12 +66,11 @@
       text-decoration: none;
     }
     &_orange {
-      background: $orange;
+      background: linear-gradient(119deg, rgba(245,141,88,1) 0%, rgba(192,54,70,1) 100%);
       color: $white;
       border-radius: 23px;
-      transition: all .2s;
 
-      &:hover {
+      &:hover, &:focus {
         background: darken($orange, 10%);
         color: $white;
       }
@@ -95,7 +94,7 @@
       color: $white;
     }
     & i {
-      color: #f6d576;
+      color: $yellow;
       margin-right: 5px;
     }
     & span {

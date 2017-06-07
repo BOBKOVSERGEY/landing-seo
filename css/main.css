@@ -47,11 +47,10 @@
     .menu__btn:focus {
       text-decoration: none; }
     .menu__btn_orange {
-      background: #DC847A;
+      background: linear-gradient(119deg, #f58d58 0%, #c03646 100%);
       color: #EDEEEC;
-      border-radius: 23px;
-      transition: all .2s; }
-      .menu__btn_orange:hover {
+      border-radius: 23px; }
+      .menu__btn_orange:hover, .menu__btn_orange:focus {
         background: #d15f52;
         color: #EDEEEC; }
   .menu__phone {
@@ -74,7 +73,7 @@
     .menu__phone span {
       font-family: FuturaPTBold; }
   .menu_scroll {
-    background: rgba(77, 54, 108, 0.75); }
+    background: rgba(43, 34, 91, 0.9); }
   .menu nav {
     background: #dc847a;
     width: 100vw;
@@ -152,7 +151,14 @@
       transform: scale(1.2); }
   .slider__intro {
     margin-top: 150px;
-    color: #fff; }
+    color: rgba(213, 196, 170, 0.75); }
+  .slider__heading {
+    font-size: 73px;
+    font-family: RobotoBold; }
+  .slider h1 {
+    font-size: 23px;
+    font-family: RobotoBold;
+    line-height: 1.5; }
 
 body {
   font-family: RobotoLight;

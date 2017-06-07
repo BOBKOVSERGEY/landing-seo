@@ -34,11 +34,22 @@
       -o-transform: scale(1.2);
       transform: scale(1.2);
     }
+
   }
 
   &__intro {
     margin-top: 150px;
-    color: #fff;
+    color: $colorSliderIntro;
+  }
+
+  &__heading {
+    font-size: 73px;
+    font-family: $robotoBold;
+  }
+  & h1 {
+    font-size: 23px;
+    font-family: $robotoBold;
+    line-height: 1.5;
   }
 
 }
