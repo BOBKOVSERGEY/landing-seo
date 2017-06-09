@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   &__wrapper {
-    height: 600px;
+    height: 750px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -58,7 +58,7 @@
 
     &_big {
       background: rgba(#bd48a3, 1);
-      background: linear-gradient(119deg, rgba(189,72,163,.45) 0%, rgba(227,75,96,.45) 100%);
+      background: linear-gradient(119deg, rgba(189,72,163,.45) 0%, rgba(227,75,96,.65) 100%);
       padding: 20px 30px;
       border-radius: 35px;
       font-size: 16px;

@@ -2,10 +2,12 @@
 @import "mixins";
 @import "menu";
 @import "slider";
+@import "semicircle";
+@import "services";
 body{
   font-family: $robotoLight;
   font-size: 22px;
   font-weight: 300;
   color: #2c2d30;
-  background: #fff;
+  background: $bgbody;
 }

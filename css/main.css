@@ -123,7 +123,7 @@
   width: 100%;
   height: 100%; }
   .slider__wrapper {
-    height: 600px;
+    height: 750px;
     width: 100%;
     position: relative;
     overflow: hidden; }
@@ -164,7 +164,7 @@
     margin-top: 30px; }
     .slider__btn_big {
       background: #bd48a3;
-      background: linear-gradient(119deg, rgba(189, 72, 163, 0.45) 0%, rgba(227, 75, 96, 0.45) 100%);
+      background: linear-gradient(119deg, rgba(189, 72, 163, 0.45) 0%, rgba(227, 75, 96, 0.65) 100%);
       padding: 20px 30px;
       border-radius: 35px;
       font-size: 16px;
@@ -175,11 +175,55 @@
         background: rgba(227, 75, 98, 0.65);
         color: rgba(213, 196, 170, 0.75); }
 
+.semicircle {
+  margin: -150px -15%;
+  height: 150px;
+  overflow: hidden;
+  position: relative; }
+  .semicircle__item {
+    width: 100%;
+    height: 800px;
+    background: #d5c4aa;
+    border-radius: 50% 50% 0 0;
+    text-align: center; }
+  .semicircle__heading {
+    font-family: RobotoBold;
+    color: rgba(2, 3, 4, 0.75);
+    font-size: 56px;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+    position: relative;
+    z-index: 1; }
+    .semicircle__heading:before {
+      top: 50px;
+      width: 70px;
+      height: 20px;
+      content: "";
+      position: absolute;
+      background-color: #ff9966;
+      border-radius: 10px;
+      z-index: -1; }
+    .semicircle__heading:after {
+      bottom: -5px;
+      width: 70px;
+      left: 0;
+      height: 20px;
+      content: "";
+      position: absolute;
+      background-color: #DC847A;
+      border-radius: 10px;
+      z-index: -1;
+      transform: rotate(-5deg); }
+
+.service {
+  margin-top: 150px; }
+
 body {
   font-family: RobotoLight;
   font-size: 22px;
   font-weight: 300;
   color: #2c2d30;
-  background: #fff; }
+  background: #d5c4aa; }
 
 /*# sourceMappingURL=main.css.map */
