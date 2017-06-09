@@ -35,19 +35,19 @@
     position: absolute;
     top: 19px;
     left: 30px; }
-  .menu__btn {
+  .menu__btn, .slider__btn {
     display: inline-block;
     padding: 7px 20px;
     font-size: 16px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer; }
-    .menu__btn:hover {
+    .menu__btn:hover, .slider__btn:hover {
       text-decoration: none; }
-    .menu__btn:focus {
+    .menu__btn:focus, .slider__btn:focus {
       text-decoration: none; }
     .menu__btn_orange {
-      background: linear-gradient(119deg, #f58d58 0%, #c03646 100%);
+      background: linear-gradient(119deg, rgba(245, 141, 88, 0.75) 0%, rgba(192, 54, 70, 0.75) 100%);
       color: #EDEEEC;
       border-radius: 23px; }
       .menu__btn_orange:hover, .menu__btn_orange:focus {
@@ -73,7 +73,7 @@
     .menu__phone span {
       font-family: FuturaPTBold; }
   .menu_scroll {
-    background: rgba(43, 34, 91, 0.9); }
+    background: linear-gradient(119deg, rgba(150, 58, 125, 0.75) 0%, rgba(76, 60, 122, 0.75) 100%); }
   .menu nav {
     background: #dc847a;
     width: 100vw;
@@ -135,6 +135,7 @@
     width: 100%;
     background: url(../images/bg1.jpg) no-repeat 50%;
     background-size: cover;
+    background-attachment: fixed;
     transition: -webkit-transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82);
     -o-transition: transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82), -o-transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82);
     transition: transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82);
@@ -159,6 +160,20 @@
     font-size: 23px;
     font-family: RobotoBold;
     line-height: 1.5; }
+  .slider__btn {
+    margin-top: 30px; }
+    .slider__btn_big {
+      background: #bd48a3;
+      background: linear-gradient(119deg, rgba(189, 72, 163, 0.45) 0%, rgba(227, 75, 96, 0.45) 100%);
+      padding: 20px 30px;
+      border-radius: 35px;
+      font-size: 16px;
+      font-family: RobotoBold;
+      text-transform: uppercase;
+      color: rgba(213, 196, 170, 0.75); }
+      .slider__btn_big:hover, .slider__btn_big:focus {
+        background: rgba(227, 75, 98, 0.65);
+        color: rgba(213, 196, 170, 0.75); }
 
 body {
   font-family: RobotoLight;

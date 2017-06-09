@@ -66,7 +66,7 @@
       text-decoration: none;
     }
     &_orange {
-      background: linear-gradient(119deg, rgba(245,141,88,1) 0%, rgba(192,54,70,1) 100%);
+      background: linear-gradient(119deg, rgba(245,141,88,.75) 0%, rgba(192,54,70,.75) 100%);
       color: $white;
       border-radius: 23px;
 
@@ -103,7 +103,7 @@
   }
 
   &_scroll {
-    background: $menyScroll;
+    background: linear-gradient(119deg, rgba(150,58,125,.75) 0%, rgba(76,60,122,.75) 100%);
   }
   nav {
     background: $bgPopupMenu;
