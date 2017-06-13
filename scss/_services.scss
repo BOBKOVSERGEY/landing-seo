@@ -1,3 +1,30 @@
 .service {
-  margin-top: 150px;
+  margin-top: 170px;
+  background-attachment: fixed;
+
+  &__item {
+    background: #fff;
+    margin: 20px 0;
+    //border-radius: 5px 5px 0 0;
+    transition: all .3s;
+    position: relative;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+
+    & h2 {
+      vertical-align: middle;
+      padding: 30px 20px;
+      font-size: 25px;
+    }
+
+    &_big {
+      background: linear-gradient(119deg, rgba(146,89,202,1) 0%, rgba(72,83,165,1) 100%);
+
+      & h2 {
+        color: $white;
+        padding: 60px 20px;
+      }
+    }
+  }
 }
