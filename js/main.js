@@ -1,10 +1,12 @@
   // Declare the variable
+  var elHtml = $('body');
   var toggles = $(".burger");
 
 // This function adds the class that displays the menu
   toggles.on("click", function() {
     $(this).closest(".menu").toggleClass("open");
     $(this).toggleClass('burger--close');
+    elHtml.toggleClass("addClassBody");
   });
 
 // Declare the variable

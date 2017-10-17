@@ -6,8 +6,13 @@
 @import "services";
 body{
   font-family: $robotoLight;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   color: #2c2d30;
   background: $bgbody;
+}
+.addClassBody {
+  margin-right: 17px;
+  overflow: auto;
+  height: 100%;
 }

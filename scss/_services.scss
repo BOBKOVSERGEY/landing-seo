@@ -1,30 +1,66 @@
 .service {
   margin-top: 170px;
-  background-attachment: fixed;
-
   &__item {
-    background: #fff;
-    margin: 20px 0;
-    //border-radius: 5px 5px 0 0;
+    width: 320px;
+    height: 320px;
+    background-size: cover;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(#000, .75);
     transition: all .3s;
-    position: relative;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
-
-    & h2 {
-      vertical-align: middle;
-      padding: 30px 20px;
-      font-size: 25px;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
     }
-
-    &_big {
-      background: linear-gradient(119deg, rgba(146,89,202,1) 0%, rgba(72,83,165,1) 100%);
-
-      & h2 {
-        color: $white;
-        padding: 60px 20px;
-      }
+    &:focus {
+      text-decoration: none;
+      color: #fff;
     }
+    &:hover .service__bg {
+      background: rgba(#473C4A,.7);
+      transition: all .4s;
+    }
+    &:hover .service__hover-text {
+      opacity: 1;
+      transition: all .4s;
+    }
+  }
+  &__bg {
+    background: url(../images/mosk.png) 0 0;
+    height: 70%;
+    transition: all .4s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  &__hover-text {
+    font-family: RobotoMedium;
+    text-transform: uppercase;
+    font-size: 22px;
+    opacity: 0;
+    padding: 15px 30px;
+    color: #fff;
+  }
+  &__text {
+    height: 30%;
+    background: rgba(#A57960,.9);
+    padding: 10px 15px;
+    text-align: center;
+  }
+  &__heading {
+    font-family: FuturaPTBold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__price {
+    font-family: FuturaPTLight;
   }
 }

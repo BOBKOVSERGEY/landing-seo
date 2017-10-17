@@ -5,7 +5,16 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  .service__item_brright {
+    border-radius: 0;
+  }
+  .service__item_brleft {
+    border-radius: 35% 35% 0 0;
+  }
+  .service__block {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 /* Small Devices, Tablets */
